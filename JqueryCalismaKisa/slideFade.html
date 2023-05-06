@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideFade</title>
+    <script src="scripts/jquery.min.js"></script>
+</head>
+<body>
+    <p>Sıfırdan web develeper eğitimi</p>
+    <button id ="slideup">SlideUp</button>
+    <button id="slidedown">SlideDown</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadein">fadein</button>
+    <button id="fadeout">fadeout</button>
+    <button id="fadeto">fadeto</button>
+    
+    <script>    
+    $(document).ready(function(){
+        $("#slideup").click(function(){
+            $("p").slideUp("3000");
+        });
+        $("#slidedown").click(function(){
+          
+           $("p").slideDown("slow");
+        });
+        $("#toggle").click(function(){
+            $("p").toggle("fast");
+        });
+        $("#fadein").click(function(){
+            $("p").fadeIn("4000",0,5);
+        });
+        $("#fadeout").click(function(){
+            $("p").fadeOut("fast");
+            
+        });
+        $("#fadeto").click(function(){
+            $("p").fadeto("slow");
+            
+        });
+
+
+    });
+
+
+    </script>
+</body>
+</html>

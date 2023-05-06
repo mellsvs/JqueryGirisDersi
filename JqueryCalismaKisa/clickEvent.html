@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/jquery.min.js"></script>
+    <title>ClicEvent</title>
+    <style>
+        .paragrafrenklendir
+        {
+            color:aqua;
+            font-size: 25px;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <p id="p1">Web eğitimi</p>
+    <p id="p2">Web eğitimi</p>
+    <p class="paragraf">Web eğitimi</p>
+    <p class="paragraf">Web eğitimi</p>
+    <script>
+         $(document).ready(function(){
+         $(".paragraf").click(function(){
+            //alert("paragraf click event");
+            $(this).addClass("paragrafrenklendir")
+
+
+
+    });
+         });
+//           $(document).ready(function()
+//         {
+//            console.log("document ready");
+//        });
+//        $(function(){
+//            console.log("farklı türde fonksiyon çağırma");
+//        });
+//         51.38dk
+// sayfa üzerindeki tüm elementlere click eventi yazılabilir buton olmasına gerek yok.
+
+   
+    
+    </script>
+
+</body>
+</html>

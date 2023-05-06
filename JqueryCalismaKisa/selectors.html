@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <script src="scripts/jquery.min.js"></script>
+
+</head>
+<body>
+    <h3>Jquery dersleri</h3>
+    <a href="#">deneme link</a>
+    <ul id ="liste">
+        <h3 id ="header">JQUERY DERSLERİ</h3>
+        <li>JQuery Reference</li>
+        <li>Selectors</li>
+        <li><a href="#">ul li a  diyerek erişilebilir.</a></li>
+        <li>Jquery Plugins</li>
+    </ul>
+    <script>
+        console.log($("#liste"));
+        console.log($("h3"));
+        console.log($("ul"));
+        console.log($("li"));
+        console.log($("a"));
+
+       // javascrip ile header e erişme
+        document.getElementById("header").style.color="red";
+      // jquery ile headere erişme
+        $("#header").css("color","blue");
+        $("#a").css("text-decoration","none");
+        var styles={
+            color:"yellow",
+            fontsize:"20px",
+            border:"1px solid red"
+        }
+        $("ul li").css(styles);
+
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>effect</title>
+    <script src="scripts/jquery.min.js"></script>
+</head>
+<body>
+    <p>Sıfırdan web develeper eğitimi</p>
+    <button id ="hide">HİDE</button>
+    <button id="show">SHOW</button>
+    <button id="toggle">TOGGLE</button>
+    <script>    
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide("3000");
+        });
+        $("#show").click(function(){
+            alert("paragraf gösterildi");
+           $("p").show();
+        });
+        $("#toggle").click(function(){
+            $("p").toggle();
+        });
+
+    });
+
+
+    </script>
+</body>
+</html>

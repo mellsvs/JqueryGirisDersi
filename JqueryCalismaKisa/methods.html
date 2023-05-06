@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/jquery.min.js"></script>
+     <title>methods</title>
+<style>
+    .highlight{
+        background-color: yellow;
+    }
+    .green{
+        background-color: green;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+    <!--
+        jquery methods
+        css()
+        text : seçtiğim elemanlar içerisindeki yazan textleri döndürür.
+        get özelliiği vardır text içeriğini değiştirebilirm
+        val : tanımlanan value değerini getirir.
+        attr : etiketin içerisindeki src ve with gibi özelliklere erişmemizi sağlar.
+        
+        html
+        addClass 
+        removeClass : siler
+        toggleClass : class yoksa eklenir varsa silinir.
+
+    -->
+    <h1>JQuery Helper Methods</h1>
+    <ul>
+        <li>Jquery</li>
+        <li>Jquery</li>
+        <li>Jquery</li>
+        <li>Jquery</li>
+    </ul>
+    <input type="text"placeholder="fullname"value="value degerini değiştiricez">
+<input id="ad" type="text"placeholder= "adınız:">
+<input id="soyad" type="text"class="green"placeholder="soyadınız:">
+<button id ="btnKaydet"onClick="adsoyad()">Kaydet</button>
+
+<script>
+        console.log($("h1").text("javascript"));
+ 
+   function adsoyad(){
+    var ad= $("#ad").val();
+    var soyad=$("#soyad").val();
+    console.log("adınız ve soyadınız"+ad+" "+soyad);
+   $("#ad").addClass("highlight");
+   $("#soyad").removeClass("green");
+} 
+
+
+    </script>
+</body>
+</html>
